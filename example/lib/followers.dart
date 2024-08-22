@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 class MyFollowers extends StatelessWidget {
+  const MyFollowers({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: Scaffold(
         body: Center(
           child: Text(
-            'This is followers Screen',
+            'This is followersa Screen',
             style: TextStyle(fontSize: 24),
           ),
         ),
