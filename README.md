@@ -1,6 +1,7 @@
 # flutter_pinned_shortcut_plus
 
-          Flutter pinned shortcuts are UI elements that offer quick access to key actions or views in an app. In chat apps, they let users pin chat threads, contacts, or actions to a prominent spot, making them easily accessible without extra navigation.
+
+      Flutter pinned shortcuts provide quick access to key actions or views in an app. In chat apps, users can pin threads, contacts, or actions for easy access, reducing the need for extra navigation.
 
 
 
@@ -157,9 +158,3 @@ class MyProfile extends StatelessWidget {
 
 For more information, see the full documentation at:
 [https://github.com/tariqarbi03/flutter_pinned_shortcut_plus/tree/master](https://github.com/tariqarbi03/flutter_pinned_shortcut_plus/tree/master)
-
-    See also:
-
-    - [Pinned_Shortcut], a widget for creating and managing website.
-
-import 'package:flutter/material.dart';

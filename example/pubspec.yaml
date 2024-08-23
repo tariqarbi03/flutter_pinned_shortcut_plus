@@ -1,7 +1,5 @@
 name: flutter_pinned_shortcut_plus_example
 description: "This will help you to create shortcut on home screen"
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
-
 environment:
   sdk: '>=2.17.6 <4.0.0'
 
