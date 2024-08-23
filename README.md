@@ -1,10 +1,6 @@
 # flutter_pinned_shortcut_plus
 
-          Flutter pinned shortcuts offer quick access to actions or views within an app.
-          In chat apps, they allow users to pin chat threads, contacts, or actions to the main
-          interface, making them easily accessible without navigating multiple screens. 
-          These shortcuts enhance user experience by providing direct access to important features,
-          streamlining navigation, and improving overall app efficiency.
+          Flutter pinned shortcuts are UI elements that offer quick access to key actions or views in an app. In chat apps, they let users pin chat threads, contacts, or actions to a prominent spot, making them easily accessible without extra navigation.
 
 
 

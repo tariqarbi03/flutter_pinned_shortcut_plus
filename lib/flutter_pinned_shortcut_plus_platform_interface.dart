@@ -9,7 +9,7 @@ abstract class FlutterPinnedShortcutPlatform extends PlatformInterface {
   static final Object _token = Object();
 
   static FlutterPinnedShortcutPlatform _instance =
-  MethodChannelFlutterPinnedShortcut();
+      MethodChannelFlutterPinnedShortcut();
 
   /// The default instance of [FlutterPinnedShortcutPlatform] to use.
   ///

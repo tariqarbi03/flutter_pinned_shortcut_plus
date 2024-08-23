@@ -7,21 +7,24 @@ import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 class MockFlutterPinnedShortcutPlusPlatform
     with MockPlatformInterfaceMixin
     implements FlutterPinnedShortcutPlusPlatform {
-
   @override
   Future<String?> getPlatformVersion() => Future.value('42');
 }
 
 void main() {
-  final FlutterPinnedShortcutPlusPlatform initialPlatform = FlutterPinnedShortcutPlusPlatform.instance;
+  final FlutterPinnedShortcutPlusPlatform initialPlatform =
+      FlutterPinnedShortcutPlusPlatform.instance;
 
   test('$MethodChannelFlutterPinnedShortcutPlus is the default instance', () {
-    expect(initialPlatform, isInstanceOf<MethodChannelFlutterPinnedShortcutPlus>());
+    expect(initialPlatform,
+        isInstanceOf<MethodChannelFlutterPinnedShortcutPlus>());
   });
 
   test('getPlatformVersion', () async {
-    FlutterPinnedShortcutPlus flutterPinnedShortcutPlusPlugin = FlutterPinnedShortcutPlus();
-    MockFlutterPinnedShortcutPlusPlatform fakePlatform = MockFlutterPinnedShortcutPlusPlatform();
+    FlutterPinnedShortcutPlus flutterPinnedShortcutPlusPlugin =
+        FlutterPinnedShortcutPlus();
+    MockFlutterPinnedShortcutPlusPlatform fakePlatform =
+        MockFlutterPinnedShortcutPlusPlatform();
     FlutterPinnedShortcutPlusPlatform.instance = fakePlatform;
 
     expect(await flutterPinnedShortcutPlusPlugin.getPlatformVersion(), '42');

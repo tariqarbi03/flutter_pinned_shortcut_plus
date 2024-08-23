@@ -34,7 +34,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      navigatorKey: _navigatorKey,  // Set the navigatorKey here
+      navigatorKey: _navigatorKey, // Set the navigatorKey here
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Pinned Shortcut'),
@@ -49,7 +49,9 @@ class _MyAppState extends State<MyApp> {
                 child: const Text("Add Follower Shortcut with Icon"),
               ),
             ),
-            const SizedBox(height: 10,),
+            const SizedBox(
+              height: 10,
+            ),
             Center(
               child: ElevatedButton(
                 onPressed: addPinnedShortcut1,
@@ -69,21 +71,20 @@ class _MyAppState extends State<MyApp> {
         label: "Followers",
         action: "followers",
         iconAssetName: "assets/splash.png",
-        iconUri: null
-    );
+        iconUri: null);
   }
 
-  void addPinnedShortcut1() async{
+  void addPinnedShortcut1() async {
     //first of all it will check iconUri if it will be null it will display assetIcon otherwise it will add url icon
     File? file;
-      file = await DefaultCacheManager().getSingleFile("https://cdn-icons-png.flaticon.com/512/7347/7347153.png");
+    file = await DefaultCacheManager().getSingleFile(
+        "https://cdn-icons-png.flaticon.com/512/7347/7347153.png");
     _flutterPinnedShortcutPlugin.createPinnedShortcut(
         id: "2",
         label: "Profile",
         action: "profile",
         iconAssetName: "assets/splash.png",
-        iconUri: Uri.file(file.path).toString()
-    );
+        iconUri: Uri.file(file.path).toString());
   }
 
   void getIncomingAction() {
@@ -99,7 +100,7 @@ class _MyAppState extends State<MyApp> {
           );
           break;
         case "profile":
-        // Use the navigatorKey to push the route or any other state manage
+          // Use the navigatorKey to push the route or any other state manage
           _navigatorKey.currentState?.push(
             MaterialPageRoute(builder: (context) => MyProfile()),
           );

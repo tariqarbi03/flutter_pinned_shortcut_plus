@@ -1,21 +1,18 @@
-
 import 'package:flutter_pinned_shortcut_plus/flutter_pinned_shortcut_plus_platform_interface.dart';
 
 class FlutterPinnedShortcut {
-  Future<String?> createPinnedShortcut({
-    required String id,
-    required String label,
-    required String action,
-    String? iconAssetName,
-    String? iconUri
-  }) {
+  Future<String?> createPinnedShortcut(
+      {required String id,
+      required String label,
+      required String action,
+      String? iconAssetName,
+      String? iconUri}) {
     return FlutterPinnedShortcutPlatform.instance.createPinnedShortcut(
         id: id,
         label: label,
         action: action,
         iconAssetName: iconAssetName,
-        iconUri: iconUri
-    );
+        iconUri: iconUri);
   }
 
   Future<void> getLaunchAction(

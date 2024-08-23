@@ -1,7 +1,5 @@
 name: flutter_pinned_shortcut_plus_example
-description: "Demonstrates how to use the flutter_pinned_shortcut_plus plugin."
-# The following line prevents the package from being accidentally published to
-# pub.dev using `flutter pub publish`. This is preferred for private packages.
+description: "This will help you to create shortcut on home screen"
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 environment:
